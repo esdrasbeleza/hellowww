@@ -2,6 +2,10 @@
 # Created by https://www.gitignore.io/api/osx,node,linux,windows,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=osx,node,linux,windows,visualstudiocode
 
+# Don't commit generated files
+lib/
+src/*.js
+
 ### Linux ###
 *~
 
