@@ -2,7 +2,7 @@ import * as os from 'os';
 import * as http from 'http';
 
 const hostname = os.hostname();
-const port = 8080;
+const port = 80;
 
 const server = http.createServer((_, res) => {
     res.statusCode = 200;
