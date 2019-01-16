@@ -3,7 +3,7 @@
 VERSION = latest
 
 build:
-	docker build -t hellowww:$(VERSION) . -f Dockerfile
+	docker build -t hellowww-go:$(VERSION) . -f Dockerfile
 
 run:
-	docker run -p 8080:80 -it hellowww:$(VERSION)
+	docker run -p 8080:80 -it hellowww-go:$(VERSION)
