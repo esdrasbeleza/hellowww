@@ -1,16 +1,14 @@
 import * as os from 'os';
 import * as http from 'http';
 
-const hostname = os.hostname();
+const host = os.hostname();
 const port = 80;
 
-const server = http.createServer((_, res) => {
+http.createServer((_, res) => {
     res.statusCode = 200;
     res.setHeader('Content-type', 'text/plain');
-    res.end("[TypeScript] Hello from " + hostname);
+    res.end("[TypeScript] Hello from " + host);
+}).listen(port, () => {
+    console.log(`Server running at http://${host}:${port}/`);
 });
-
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
-  });
 
