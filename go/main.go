@@ -10,7 +10,7 @@ func main() {
 	name, _ := os.Hostname()
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "[Go] Welcome to my %s!", name)
+		fmt.Fprintf(w, "[Go] Welcome to %s!", name)
 	})
 
 	http.ListenAndServe(":80", nil)

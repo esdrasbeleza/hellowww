@@ -7,7 +7,7 @@ const port = 80;
 http.createServer((_, res) => {
     res.statusCode = 200;
     res.setHeader('Content-type', 'text/plain');
-    res.end("[TypeScript] Hello from " + host);
+    res.end(`[TypeScript] Welcome to ${host}!`);
 }).listen(port, () => {
     console.log(`Server running at http://${host}:${port}/`);
 });
