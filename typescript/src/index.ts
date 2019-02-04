@@ -1,5 +1,5 @@
-import * as os from 'os';
 import * as http from 'http';
+import * as os from 'os';
 
 const host = os.hostname();
 const port = 80;
@@ -11,4 +11,3 @@ http.createServer((_, res) => {
 }).listen(port, () => {
     console.log(`Server running at http://${host}:${port}/`);
 });
-

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "./build/index.js",
   "scripts": {
+    "tslint": "tslint -c tslint.json 'src/**/*.ts'",
     "postinstall": "tsc -p ./src",
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
     "start": "node ./build/index.js"

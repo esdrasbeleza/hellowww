@@ -1,0 +1,38 @@
+{
+    "extends": "tslint:recommended",
+    "rules": {
+        "directive-selector-prefix": [
+            false,
+            "sg"
+        ],
+        "component-selector-prefix": [
+            false,
+            "sg"
+        ],
+        "pipe-naming": [
+            false,
+            "camelCase",
+            "sg"
+        ],
+        "quotemark": [
+            true,
+            "single",
+            "avoid-escape"
+        ],
+        "ordered-imports": true,
+        "trailing-comma": [
+            true,
+            {
+                "multiline": "never",
+                "singleline": "never"
+            }
+        ],
+        "member-access": false,
+        "object-literal-sort-keys": false,
+        "no-string-literal": false,
+        "no-reference": false,
+        "variable-name": false,
+        "no-consecutive-blank-lines": true,
+        "no-console": false
+    }
+}
