@@ -13,5 +13,6 @@ func main() {
 		fmt.Fprintf(w, "[Go] Welcome to %s!", name)
 	})
 
+	fmt.Printf("Server running at http://%s:80\n", name)
 	http.ListenAndServe(":80", nil)
 }
