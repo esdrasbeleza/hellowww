@@ -9,4 +9,4 @@ docker-run:
 	docker run -p 8080:80 -t hellowww-go:$(VERSION)
 
 docker-run-detached:
-	docker run -p 8080:80 -t -d hellowww-ts:$(VERSION)
+	docker run -p 8080:80 -t -d hellowww-go:$(VERSION)
