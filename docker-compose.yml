@@ -7,6 +7,9 @@ services:
     typescript:
         build: ./typescript
 
+    dotnet:
+        build: ./dotnet        
+
     nginx:
       image: "nginx:latest"
       volumes:

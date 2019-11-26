@@ -1,9 +1,9 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:3.0 AS builder
 COPY . /app
 WORKDIR /app
-RUN dotnet publish -c Release -o out
+RUN dotnet publish -c Release -o build
 
-FROM mcr.microsoft.com/dotnet/core/runtime:3.0 AS runtime
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.0 AS runtime
 WORKDIR /app
-COPY --from=build /app/out ./
-ENTRYPOINT ["dotnet", "dotnetapp.dll"]
+COPY --from=builder /app/build/* ./
+ENTRYPOINT ["dotnet", "dotnet.dll"]
