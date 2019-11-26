@@ -6,4 +6,4 @@ FROM openjdk:12
 RUN mkdir /app
 COPY --from=builder /home/gradle/project/build/libs/hellowww-java-1.0.jar /app/hellowww.jar
 WORKDIR /app
-CMD ["java","-jar","hellowww.jar"]
+CMD ["java","-jar","-Dserver.port=80","hellowww.jar"]
