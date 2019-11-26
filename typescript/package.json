@@ -4,7 +4,7 @@
   "main": "./build/index.js",
   "scripts": {
     "tslint": "tslint -c tslint.json 'src/**/*.ts'",
-    "postinstall": "tsc -p ./src",
+    "postinstall": "tsc",
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
     "start": "node ./build/index.js"
   },
@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "nodemon": "^2.0.1"
   },
   "dependencies": {
     "ts-node": "^7.0.1",
