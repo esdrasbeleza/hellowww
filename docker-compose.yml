@@ -1,0 +1,15 @@
+version: "3.7" 
+
+services:
+    go:
+        build: ./go
+ 
+    typescript:
+        build: ./typescript
+
+    nginx:
+      image: "nginx:latest"
+      volumes:
+        - "./nginx.conf:/etc/nginx/nginx.conf:ro"
+      ports:
+        - "8080:80"
