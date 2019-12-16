@@ -1,5 +1,6 @@
 FROM gradle:5.6.3-jdk12 as builder
 COPY . /home/gradle/project
+WORKDIR /home/gradle/project
 RUN gradle build
 
 FROM openjdk:12
