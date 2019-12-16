@@ -10,8 +10,8 @@ services:
     dotnet:
         build: ./dotnet
 
-    java:
-        build: ./java
+    java-gradle:
+        build: ./java/java-gradle
 
     nginx:
       image: "nginx:latest"
