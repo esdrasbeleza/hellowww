@@ -1,8 +1,18 @@
 version: "3.7"
 
 services:
+  go:
+    build: ./go
+
+  typescript:
+    build: ./typescript
+
+  dotnet:
+    build: ./dotnet
+
   java-gradle:
     build: ./java/java-gradle
+
   java-maven:
     build: ./java/java-maven
 
