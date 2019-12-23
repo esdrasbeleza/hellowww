@@ -16,6 +16,9 @@ services:
   java-maven:
     build: ./java/java-maven
 
+  clojure:
+    build: ./clojure
+
   nginx:
     image: "nginx:latest"
     volumes:
