@@ -19,9 +19,12 @@ services:
   clojure:
     build: ./clojure
 
-  nginx:
-    image: "nginx:latest"
-    volumes:
-      - "./nginx.conf:/etc/nginx/nginx.conf:ro"
-    ports:
-      - "8080:80"
+  scala:
+        build: ./scala
+
+    nginx:
+        image: "nginx:latest"
+        volumes:
+            - "./nginx.conf:/etc/nginx/nginx.conf:ro"
+        ports:
+            - "8080:80"

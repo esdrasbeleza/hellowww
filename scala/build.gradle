@@ -1,5 +1,5 @@
 plugins {
-    id 'java'
+    id 'scala'
     id 'org.springframework.boot' version '2.2.2.RELEASE'
     id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 }
@@ -9,7 +9,7 @@ repositories {
 }
 
 bootJar {
-    archiveBaseName = 'hellowww-java'
+    archiveBaseName = 'hellowww-scala'
     archiveVersion =  '1.0'
 }
 
