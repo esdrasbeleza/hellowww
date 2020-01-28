@@ -1,0 +1,23 @@
+plugins {
+    id 'scala'
+    id 'org.springframework.boot' version '2.2.2.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+}
+
+repositories {
+    mavenCentral()
+}
+
+bootJar {
+    archiveBaseName = 'hellowww-scala'
+    archiveVersion =  '1.0'
+}
+
+sourceCompatibility = 13
+targetCompatibility = 13
+
+dependencies {
+    implementation 'org.scala-lang:scala-library:2.11.12'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+}
+
