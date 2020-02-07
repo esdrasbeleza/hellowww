@@ -9,7 +9,7 @@ class HelloController {
     @RequestMapping(Array("/"))
     @throws(classOf[UnknownHostException])
     def index = {
-        var hostname = InetAddress.getLocalHost().getHostName()
+        val hostname = InetAddress.getLocalHost().getHostName()
         s"[Scala] Welcome to ${hostname}"
     }
     
