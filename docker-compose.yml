@@ -16,6 +16,9 @@ services:
     scala:
         build: ./scala
 
+    elixir:
+        build: ./elixir
+
     nginx:
         image: "nginx:latest"
         volumes:
