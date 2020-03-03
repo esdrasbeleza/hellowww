@@ -1,19 +1,25 @@
 version: "3.7"
 
 services:
-    go:
-        build: ./go
+  go:
+    build: ./go
 
-    typescript:
-        build: ./typescript
+  typescript:
+    build: ./typescript
 
-    dotnet:
-        build: ./dotnet
+  dotnet:
+    build: ./dotnet
 
-    java:
-        build: ./java
+  java-gradle:
+    build: ./java/java-gradle
 
-    scala:
+  java-maven:
+    build: ./java/java-maven
+
+  clojure:
+    build: ./clojure
+
+  scala:
         build: ./scala
 
     elixir:
